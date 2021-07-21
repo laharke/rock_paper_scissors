@@ -28,7 +28,7 @@ buttons.forEach((button)=>{button.addEventListener('click',()=>{
         if (humanScore == 5){
             winnerNode.textContent = 'GANASTE! F5 para jugar de nuevo'
         }
-        if(computerScore == 5){}
+        else if(computerScore == 5){}
             winnerNode.textContent = 'PERDISTE! F5 para jugar de nuevo'
     }
     })
