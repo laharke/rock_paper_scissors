@@ -6,7 +6,9 @@
     <title>Piedra, papel o tijera</title>
 </head>
 <body>
-    <p>Elegí entre los tres:</p>
+    <h1>Piedra, papel o tijera</h1>
+    <p>El primero en llegar a 5 puntos gana.</p>
+    <p id="choose">Elegí tu opción a haciendo click:</p>
     <div id="imgs">
         <button class='btn' id="piedra"><img src="img/piedra.jpg" alt="piedra"></button>
         <button class='btn' id="papel"><img src="img/papel.jpg" alt="papel" ></button>
@@ -21,9 +23,11 @@
         <p id="mensaje"></p>
     </div>
     <div>
-        <p id="winner">ACA PONDRIA EL GANADOR SI HUBIERA UNO</p>
+        <p id="winner"></p>
     </div>
-    
+    <div id="playAgainDiv">
+        <p id="playAgain""></p>
+    </div>
     <script src="functions.js"></script>
 </body>
 </html>

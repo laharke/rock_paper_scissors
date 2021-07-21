@@ -23,3 +23,60 @@ p {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-image: url(img/html-color-codes-color-tutorials-hero.jpg);
+    color: white;
+}
+
+.btn {
+    background-color: rgb(75, 3, 3);
+    color: black;
+    text-align: center;
+    font-size: 13px;
+ }
+
+ .btn:hover {
+     background-color: yellow;
+ }
+
+ button:disabled,
+ button[disabled]{
+   border: 2px solid #999999;
+   background-color: #cccccc;
+   color: #666666;
+ }
+
+ #choose {
+     margin-top: 200px;
+ }
+
+ .playAgain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 120px;
+    border: 3px solid rgb(24, 3, 83);
+    margin: auto;
+ }
+
+ .playAgain:hover {background-color: #3727c2}
+
+ .playAgain:active {
+   background-color: #af188e;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+ }
+
+ #playAgainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }

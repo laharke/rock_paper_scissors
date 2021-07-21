@@ -4,11 +4,12 @@ const playerScoreNode = document.querySelector('#playerScore');
 const computerScoreNode = document.querySelector('#computerScore');
 const piedrabutton = document.querySelector('#piedra')
 
-const mensajeNode = document.querySelector('#mensaje')
-const winnerNode = document.querySelector('#winner')
+const playAgain = document.querySelector('#playAgain');
+const mensajeNode = document.querySelector('#mensaje');
+const winnerNode = document.querySelector('#winner');
 //meto los botones en una array
 const buttons = document.querySelectorAll('.btn');
-
+console.log(playAgainDiv)
 
 
 //loopeo por cada uno de los botones agragandole un listener para el click y que ahi se juege el juego sin encesidad de una loop
@@ -26,11 +27,19 @@ buttons.forEach((button)=>{button.addEventListener('click',()=>{
         //terminar el juego
         buttons.forEach(button => button.disabled = true)
         if (humanScore == 5){
-            winnerNode.textContent = 'GANASTE! F5 para jugar de nuevo'
+            winnerNode.textContent = 'GANASTE EL JUEGO!'
         }
         else if(computerScore == 5){
-            winnerNode.textContent = 'PERDISTE! F5 para jugar de nuevo'
-    }}
+            winnerNode.textContent = 'PERDISTE EL JUEGO!'
+    }
+        let playBtn = document.createElement("button");
+        playBtn.className = "playAgain";
+        playBtn.innerHTML = "Play Again";
+        document.body.appendChild(playBtn);
+        playBtn.addEventListener('click',()=>{
+            window.location.reload();
+        })
+    }
     })
 })
 
