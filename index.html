@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
     <title>Piedra, papel o tijera</title>
 </head>
 <body>
     <p>Elegí entre los tres:</p>
-    <button type="button">Piedra</button>
-    <button type="button">Papel</button>
-    <button type="button">Tijera</button>
-
+    <div id="imgs">
+        <button class='btn' id="piedra"><img src="img/piedra.jpg" alt="piedra"></button>
+        <button class='btn' id="papel"><img src="img/papel.jpg" alt="papel" ></button>
+        <button class='btn' id="tijera"><img src="img/tijera.jpg" alt="tijera"></button>
+    </div>
+    
+    <div class="puntajes">
+        <p class="puntaje" id="playerScore">Puntaje Jugador: 0</p>
+        <p class="puntaje" id="computerScore">Puntaje Computadora: 0</p>
+    </div>
+    <div>
+        <p id="mensaje"></p>
+    </div>
+    <div>
+        <p id="winner">ACA PONDRIA EL GANADOR SI HUBIERA UNO</p>
+    </div>
+    
     <script src="functions.js"></script>
 </body>
 </html>

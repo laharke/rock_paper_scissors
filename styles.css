@@ -1,0 +1,25 @@
+img {
+    width: 200px;
+    height: 200px;
+    
+}
+
+#imgs {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.puntajes {
+    display: flex;
+    justify-content: center;
+}
+
+.puntaje {
+    margin-left: 50px;
+    margin-right: 50px;
+}
